@@ -1,0 +1,42 @@
+@import "../const.less";
+
+@avatarSize: 75px;
+@controlSize: 25px;
+
+.UserBlock {
+  padding: 20px 60px;
+}
+.UserBlock__avatar {
+  margin:auto;
+  width: @avatarSize;
+  height: @avatarSize;
+  border: 1px solid @menuShadowColor;
+  border-radius: 100%;
+}
+.UserBlock__avatarIn{
+  margin: 4px;
+  width: @avatarSize - 10;
+  height: @avatarSize - 10;
+  border-radius: 100%;
+  overflow: hidden;
+  img{
+    max-width: 100%;
+  }
+}
+.UserBlock__controls {
+  margin: 10px 0 0;
+  .UserBlock__btn {
+    display: inline-block;
+    color:@menuColor;
+    border-radius: 100%;
+    padding: 4px;
+    width: @controlSize;
+    height: @controlSize;
+    text-align: center;
+    background: @menuShadowColor;
+    cursor: pointer;
+    &:hover {
+      background: @menuBgActiveColor;
+    }
+  }
+}

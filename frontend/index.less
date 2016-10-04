@@ -1,0 +1,73 @@
+@import "./const.less";
+
+* {
+	margin:0;
+	padding:0;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+  font-size:@baseFontSize;
+  font-family: @baseFontFamily;
+	color:@baseColor;
+	-webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+textarea, input {
+  font-size:@baseFontSize;
+  font-family: @baseFontFamily;
+	color:@baseColor;
+}
+
+.clearfix::after{
+	clear:both;
+}
+.clearfix::after,
+.clearfix::before{
+	content:' ';
+	display:table;
+}
+.fl {
+  float:left;
+}
+.fr {
+  float:right;
+}
+
+a, .link, .btn {
+	-webkit-transition:0.3s all;
+	-moz-transition:0.3s all;
+	-ms-transition:0.3s all;
+	-o-transition:0.3s all;
+	transition:0.3s all;
+	cursor:pointer;
+}
+
+h2 {
+  font-size: @baseFontSize + 3;
+}
+
+.btn {
+	border: 0;
+	outline: 0;
+}
+.btn_yellow {
+	padding: 5px 15px;
+	border-radius: 30px;
+	background: @yellow;
+	color: @onYellow;
+	text-transform: uppercase;
+	&:hover {
+		background: @yellowHover;
+	}
+}
+.btn_yellow_void{
+	.btn_yellow;
+	background: transparent;
+	border: 1px solid @yellow;
+	color: @yellow;
+	&:hover {
+		background: #ffefaf;
+    color: #e2bd27;
+	}
+}

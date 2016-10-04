@@ -1,0 +1,35 @@
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+.ClientList_loading {
+  padding: 30px;
+  font-size: 16px;
+  text-align: center;
+  i {
+    display: inline-block;
+    font-size: 30px;
+    -webkit-animation: spin 1.5s infinite linear;
+    color: #000;
+  }
+}
+.ClientList_error {
+  .ClientList_loading;
+  color:#cd3c3c;
+}
+
+.ClientList {
+  padding:30px;
+  h2{
+    margin-bottom: 40px;
+  }
+}
+.ClientList__Block{
+  margin:30px 0;
+}
+.ClientList__Letter{
+  font-weight: 700;
+}
+.ClientList__Item{
+  margin:15px 0;
+}

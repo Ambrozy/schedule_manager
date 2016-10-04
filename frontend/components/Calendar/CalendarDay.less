@@ -1,0 +1,40 @@
+@import '../../const.less';
+
+@CalendarSize: 25px;
+@CalendarPointSize: 4px;
+@CalendarDayHSpace: 10px;
+
+.CalendarDay{
+  float:left;
+  width: 100% / 7;
+  .CalendarDay__elem{
+    position: relative;
+    background: transparent;
+    width: @CalendarSize;
+    height: @CalendarSize;
+    border-radius: 100%;
+    color:#000;
+    margin:@CalendarDayHSpace / 2 0;
+    &.gray{
+      color:@gray;
+    }
+    &.current{
+      background: @yellow;
+      color:@onYellow;
+    }
+    &.selected{
+      background: #e1e1e1;
+    }
+    &.hasEvent::after{
+      content: '';
+      position: absolute;
+      bottom: -@CalendarPointSize - 1;
+      left: 0; right: 0;
+      margin: 0 auto;
+      width: @CalendarPointSize;
+      height: @CalendarPointSize;
+      border-radius: 100%;
+      background: #4cca75;
+    }
+  }
+}

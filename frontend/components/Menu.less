@@ -1,0 +1,25 @@
+@import "../const.less";
+
+.Menu {
+  margin-top: 20px;
+  li a {
+    display: block;
+    border-left: 3px solid transparent;
+    padding: 13px 25px 13px 20px;
+    text-decoration: none;
+    color: @menuColor;
+    &:hover{
+      background: @menuBgHoverColor;
+      border-left-color: @yellow;
+      color: #fff;
+    }
+    &.active {
+      background: @menuBgActiveColor;
+      border-left-color: @yellow;
+      color: #fff;
+    }
+    i {
+      margin-right: 20px;
+    }
+  }
+}

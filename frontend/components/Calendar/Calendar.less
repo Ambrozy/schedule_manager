@@ -1,0 +1,34 @@
+@import '../../const.less';
+
+.Calendar {
+  position: absolute;
+  left: @menuWidth;
+  top:0;
+  text-align: center;
+  width: @calendarWidth;
+  padding: 30px;
+}
+.Calendar__Month{
+  .btn {
+    font-size: @baseFontSize + 5;
+    background: transparent;
+  }
+}
+.Calendar__MonthName {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 125px;
+}
+.Calendar__Week{
+  font-size: @baseFontSize - 1;
+  padding: 10px 0;
+  border-bottom: 1px solid #f7f7f7;
+  text-transform: uppercase;
+  span {
+    float:left;
+    width: 100% / 7;
+  }
+}
+.Calendar__Days{
+
+}
