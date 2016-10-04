@@ -9,4 +9,4 @@ npm install
 node server
 ```
 
-Далее откройте сайт по адресу localhost:8080
+Далее откройте сайт по адресу [localhost:8080](http://localhost:8080/)
